@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,49 +11,50 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Eng. in Computer Science, Hong Kong University of Science and Technology, 2022 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Winter 2020 - Present: Student Researcher
+  * [Center of AI Research](https://caire.ust.hk/), [Hong Kong University of Science and Technology](https://www.ust.hk/home)
+  * Conducting research on Natural Language Processing, currently specifically working on language generation
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Spring 2019 - Present: CoFounder
+  * [Refibre](https://refibre.co/)
+  * Our Hong Kong-based startup aims to alleviate world's textile waste by promoting sustainable and high-quality fashion
+  * Built the website and responsible for all technical-related activities
+
+* Summer 2019: Software Engineer
+  * [Center of AI Research](https://caire.ust.hk/), [Hong Kong University of Science and Technology](https://www.ust.hk/home)
+  * Developed an interactive website from scratch that displays 3D visualization of the word embeddings from their research
+  * Website as demo at [ACL 2019 conference](http://www.acl2019.org/)
+  * Familiarized with Javascript and ThreeJS framework
+
+* Winter 2019: Machine Learning Engineer
+  * [Dayta AI](https://dayta.ai/)
+  * Responsible for scraping datasets from local news outlets in Hong Kong
+  * Assisted in building their news paraphrasing NLP system 
+  * Implemented state-of-the-art tokenizers and neural networks
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Machine Learning/Deep learning
+  * Pytorch
+  * Keras
+  * Tensorflow 
+  * Numpy
+  * Pandas
+* Languages
+  * Python
+  * Java
+  * C++
+* Front-end Web Development
+  * HTML/CSS
+  * Javascript
+  * ReactJS
+* Back-end Web Development
+  * NodeJS/ExpressJS
+  * MongoDB
+* Other tools
+  * Git
+  * Linux
