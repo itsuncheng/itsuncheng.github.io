@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "I-Tsun Cheng"
+title                    : "I-Tsun Cheng (Raymond)"
 title_separator          : "-"
 name                     : &name "I-Tsun Cheng"
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "I-Tsun Cheng"
+  name             : "I-Tsun Cheng (Raymond)"
   avatar           : "profile.jpg"
   bio              : "HKUST undergraduate student majoring in Computer Science, focusing on Natural Language Processing"
   location         : "Hong Kong"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/i-tsun-raymond-cheng-082759100/"
+  linkedin         : "i-tsun-raymond-cheng-082759100"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :

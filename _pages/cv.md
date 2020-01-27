@@ -9,14 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.Eng. in Computer Science, Hong Kong University of Science and Technology, 2022 (expected)
+The pdf version of my CV is available [here](/files/CV.pdf)
+## Education
+* B.Eng. in Computer Science, [Hong Kong University of Science and Technology](https://www.ust.hk/), 2022 (expected)
 
-Work experience
-======
+## Work experience
 * Winter 2020 - Present: Student Researcher
-  * [Center of AI Research](https://caire.ust.hk/), [Hong Kong University of Science and Technology](https://www.ust.hk/home)
+  * [Center for AI Research](https://caire.ust.hk/), [Hong Kong University of Science and Technology](https://www.ust.hk/)
   * Conducting research on Natural Language Processing, currently specifically working on language generation
 
 * Spring 2019 - Present: CoFounder
@@ -25,7 +24,7 @@ Work experience
   * Built the website and responsible for all technical-related activities
 
 * Summer 2019: Software Engineer
-  * [Center of AI Research](https://caire.ust.hk/), [Hong Kong University of Science and Technology](https://www.ust.hk/home)
+  * [Center of AI Research](https://caire.ust.hk/), [Hong Kong University of Science and Technology](https://www.ust.hk/)
   * Developed an interactive website from scratch that displays 3D visualization of the word embeddings from their research
   * Website as demo at [ACL 2019 conference](http://www.acl2019.org/)
   * Familiarized with Javascript and ThreeJS framework
@@ -36,8 +35,7 @@ Work experience
   * Assisted in building their news paraphrasing NLP system 
   * Implemented state-of-the-art tokenizers and neural networks
   
-Skills
-======
+## Skills
 * Machine Learning/Deep learning
   * Pytorch
   * Keras

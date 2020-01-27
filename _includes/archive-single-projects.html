@@ -27,7 +27,7 @@
     {% endif %}
 
     <h3 class="archive__item-title" itemprop="headline" style="font-size:18px">
-        <u><a href={{post.projecturl}} style="text-decoration: none"> {{ title }} </a></u>
+        {{ title }}
     </h3>
     
     {% if post.read_time %}
@@ -36,7 +36,11 @@
 
     <div>
         {% if post.description %}
-        <p style="font-size:16px;color:#000000">{{post.description}}</p>
+          <span style="font-size:16px;color:#000000">{{post.description}}</span><br />
+        {% endif %}
+
+        {% if post.projecturl %}
+          <u><a href="{{post.projecturl}}" style="padding:0px;margin:0px;font-size:14px">[LINK]</a></u>
         {% endif %}
     </div>
 
