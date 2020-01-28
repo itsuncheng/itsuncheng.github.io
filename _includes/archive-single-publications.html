@@ -60,23 +60,23 @@
       {% endif %}
 
       {% if post.abstract %}
-        <span style="font-size:16px;color:#000000">{{post.abstract}}</span><br />
+        <span style="font-size:16px;">{{post.abstract}}</span><br />
       {% endif %}
 
       {% if post.paper %}
-        <u><a href="{{post.paper}}" style="padding:0px;margin:0px;font-size:14px">[PAPER]</a></u>
+        <a href="{{post.paper}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[PAPER]</a>
       {% endif %}
       {% if post.code %}
-        <u><a href="{{post.code}}" style="padding:0px;margin:0px;font-size:14px">[CODE]</a></u>
+        <a href="{{post.code}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[CODE]</a>
       {% endif %}
       {% if post.poster %}
-        <u><a href="{{post.poster}}" style="padding:0px;margin:0px;font-size:14px">[POSTER]</a></u>
+        <u><a href="{{post.poster}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[POSTER]</a></u>
       {% endif %}
       {% if post.slide %}
-        <u><a href="{{post.slide}}" style="padding:0px;margin:0px;font-size:14px">[SLIDES]</a></u>
+        <u><a href="{{post.slide}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[SLIDES]</a></u>
       {% endif %}
       {% if post.demo %}
-        <u><a href="{{post.demo}}" style="padding:0px;margin:0px;font-size:14px">[DEMO]</a></u>
+        <u><a href="{{post.demo}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[DEMO]</a></u>
       {% endif %}
       <!-- {% if post.award %}
         <img src="/images/award.png" style="width:25px;height:25px;display:inline-block;vertical-align:top;"/> <div style="font-size:14px;color:#245dc1;display:inline-block;">{{ post.award }}</div>

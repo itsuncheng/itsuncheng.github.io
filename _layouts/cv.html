@@ -1,0 +1,173 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork" style="padding-right:10px">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+        {% if page.modified %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+        
+        {% if page.collection == 'teaching' %}
+          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.venue and page.date %}
+          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+        
+             
+        {% if page.citation and page.paperurl %}
+          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
+        {% elsif page.citation %}
+          <p>Recommended citation: {{ page.citation }} </p>
+        {% endif %}
+    
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+
+        <!-- Custom content I moved them here -->
+        <div style="font-size:16px">
+          <div style="line-height: 1.5em;">
+            The pdf version of my CV is available <a href="/files/CV.pdf" style="color:#1a3196">here</a>
+            <br/><br/>
+            <div>
+              <h2>Education</h2>
+              <ul>
+                <li>
+                  B.Eng. in Computer Science, <a href="https://www.ust.hk/" style="color:#1a3196">Hong Kong University of Science and Technology</a>, 2022 (expected)
+                </li>
+              </ul>
+            </div>
+            <br/>
+            <div>
+              <h2>Work Experience</h2>
+              <ul>
+                <li>
+                  Winter 2020 - Present: Student Researcher
+                  <ul>
+                    <li><a href="https://caire.ust.hk/" style="color:#1a3196">Center for AI Research</a>, <a href="https://www.ust.hk/" style="color:#1a3196">Hong Kong University of Science and Technology</a></li>
+                    <li>Conducting research on Natural Language Processing, currently specifically working on language generation</li>
+                  </ul>
+                  <br/>
+                </li>
+                <li>
+                  Spring 2019 - Present: CoFounder
+                  <ul>
+                    <li><a href="https://refibre.co/" style="color:#1a3196">Refibre</a></li>
+                    <li>Our Hong Kong-based startup aims to alleviate world's textile waste by promoting sustainable and high-quality fashion</li>
+                    <li>Built the website and responsible for all technical-related activities</li>
+                  </ul>
+                  <br/>
+                </li>
+                <li>
+                  Summer 2019: Software Engineer
+                  <ul>
+                    <li><a href="https://caire.ust.hk/" style="color:#1a3196">Center for AI Research</a>, <a href="https://www.ust.hk/" style="color:#1a3196">Hong Kong University of Science and Technology</a></li>
+                    <li>Developed an interactive website from scratch that displays 3D visualization of the word embeddings from their research</li>
+                    <li>Website as demo at  <a href="http://www.acl2019.org/" style="color:#1a3196">ACL 2019 Conference</a></li>
+                    <li>Familiarized with Javascript and ThreeJS framework</li>
+                  </ul>
+                  <br/>
+                </li>
+                <li>
+                  Winter 2019: Machine Learning Engineer
+                  <ul>
+                    <li><a href="https://dayta.ai/" style="color:#1a3196">Dayta AI</a></li>
+                    <li>Responsible for scraping datasets from local news outlets in Hong Kong</li>
+                    <li>Assisted in building their news paraphrasing NLP system </li>
+                    <li>Implemented state-of-the-art tokenizers and neural networks</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <br/>
+            <div>
+              <h2>Skills</h2>
+              <ul>
+                <li>
+                  Machine Learning/Deep Learning: Pytorch, Keras, Tensorflow, Numpy, Pandas
+                </li>
+                <li>
+                  Languages: Python, Java, C++, Javascript, Visual Basic, Arduino
+                </li>
+                <li>
+                  Front-end Web Development: HTML/CSS, Bootstrap, Javascript, JQuery, ReactJS
+                </li>
+                <li>
+                  Back-end Web Development: NodeJS/ExpressJS, MongoDB
+                </li>
+                <li>
+                  Database: MongoDB, MySQL, PostgreSQL
+                </li>
+                <li>
+                  Other tools: Git, Linux Systems
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br/>
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+    </div>
+
+    {% if site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      {% if site.data.ui-text[site.locale].related_label %}
+        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      {% endif %}
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>

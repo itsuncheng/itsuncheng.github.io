@@ -1,5 +1,6 @@
 ---
-layout: archive
+# layout: archive
+layout: cv
 title: ""
 permalink: /cv/
 author_profile: true
@@ -7,7 +8,7 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<!-- {% include base_path %}
 
 The pdf version of my CV is available [here](/files/CV.pdf)
 ## Education
@@ -55,4 +56,4 @@ The pdf version of my CV is available [here](/files/CV.pdf)
   * MongoDB
 * Other tools
   * Git
-  * Linux
+  * Linux -->

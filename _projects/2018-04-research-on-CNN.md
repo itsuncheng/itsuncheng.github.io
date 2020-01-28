@@ -2,6 +2,6 @@
 title: "Comparing the Efficiency of Random Search and Tree-Structured Parzen Estimator Algorithms to Optimize Convolutional Neural Networks for Image Recognition"
 excerpt: ""
 collection: projects
-projecturl: "https://github.com/itsuncheng/hyperparameter_optimization"
-description: "For any dataset of images, convolutional neural networks with different hyperparameters have different performances. Two algorithms that optimize the hyperparameters are Random Search and Tree-Structured Parzen Estimator. This paper is an investigation on the effectiveness of Random Search and Tree-Structured Parzen Estimator to optimize convolutional neural networks for image recognition."
+codeurl: "https://github.com/itsuncheng/hyperparameter_optimization"
+description: "This research work dives into comparsion of two algorithms in optimizing hyperparameters for the most popular kind of neural networks, CNNs. I completed this research individually with the help of my school advisor as a requirement for the IB Extended Essay. The focus of the work is to see which algorithm performs better in what kind of scenarios since each set of hyperparameter configuration can potentially impact the performance of the image classification model. Majority of the research is implemented using Keras. "
 ---
