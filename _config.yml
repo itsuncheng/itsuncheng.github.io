@@ -75,7 +75,7 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          :  "UA-123279707-2"
 
 
 # Site Author
@@ -84,6 +84,10 @@ author:
   avatar           : "profile2.jpg"
   bio              : "HKUST undergraduate student majoring in Computer Science, focusing on Natural Language Processing"
   location         : "Hong Kong"
+  links            :
+    - label: "Medium"
+      icon: "fab fa-medium"
+      url: "https://medium.com/@itsuncheng"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=09x-H2MAAAAJ"
