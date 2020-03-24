@@ -39,8 +39,8 @@
           <span style="font-size:16px;">{{post.description}}</span><br />
         {% endif %}
 
-        {% if post.codeurl %}
-          <a href="{{post.codeurl}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[CODE]</a>
+        {% if post.paperurl %}
+          <a href="{{post.paperurl}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[PAPER]</a>
         {% endif %}
 
         {% if post.websiteurl %}
@@ -51,9 +51,10 @@
           <a href="{{post.slidesurl}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[SLIDES]</a>
         {% endif %}
 
-        {% if post.paperurl %}
-          <a href="{{post.paperurl}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[PAPER]</a>
+        {% if post.codeurl %}
+          <a href="{{post.codeurl}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[CODE]</a>
         {% endif %}
+
     </div>
 
   </article>
