@@ -55,6 +55,10 @@
           <a href="{{post.codeurl}}" style="padding:0px;margin:0px;font-size:14px;color:inherit">[CODE]</a>
         {% endif %}
 
+        {% if post.award %}
+          <img src="/images/award.png" style="width:24px;height:24px;display:inline-block;vertical-align:top;"/><div style="font-size:14px;color:#245dc1;display:inline-block;">{{ post.award }}</div>
+        {% endif %}
+
     </div>
 
   </article>
