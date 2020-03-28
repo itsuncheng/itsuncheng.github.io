@@ -1,5 +1,5 @@
 ---
-title: "HackNTU 2016"
+title: "Hackathon 2016"
 excerpt: ""
 collection: competitions
 websiteurl: "https://www.ntu.edu.tw/spotlight/2016/903_20160908.html"
