@@ -1,9 +1,9 @@
 ---
-title: "HackAsia 2020"
+title: "HKUST-Sino One Million Dollar Entrepreneurship Competition"
 excerpt: ""
 collection: competitions
-websiteurl: "https://www.hack.asia/#recap"
-slidesurl: "/files/hackAsia_slides.pdf"
-award: "Champion in Dairy Farm Challenge, Top 9 Overall"
-description: "A hackathon competition hosted by Jardine Matheson, HackAsia invites students and startups to develop technology-driven solutions to address current challenges faced by their companies. Our team competed in the Dairy Farm Challenge and proposed ManningsX, an all-in-one predictive platform that allows Mannings to better anticipate buyers' preferences. Among 84 finalist teams, we managed to win first place in our challenge and top 9 overall."
+websiteurl: "https://onemilliondollar.ust.hk/"
+# slidesurl: "/files/hackAsia_slides.pdf"
+award: "Top 6 Team, Exhibition Award, Student Team Award, Focus Area Award in Environment and Sustainability"
+description: "Co-founded an e-commerce startup, Refibre, to promote buying and selling second-hand fashion with the goal of reducing textile waste that ends up polluting our environment. Won the most number of awards among all the teams in the prestigious entrepreneurship competition."
 ---

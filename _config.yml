@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "I-Tsun Cheng (Raymond)"
   avatar           : "profile2.jpg"
-  bio              : "HKUST undergraduate student majoring in Computer Science, focusing on Natural Language Processing"
-  location         : "Hong Kong"
+  bio              : "Master's student at Carnegie Mellon University majoring in Computational Data Science"
+  location         : "Pittsburgh"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=09x-H2MAAAAJ"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "itsuncheng"
+  twitter          :
   vine             :
   weibo            :
   xing             :
